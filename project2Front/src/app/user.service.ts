@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
 export class UserService implements OnInit{
   user: User;
   logged = false;
-  verifyUrl = 'http://localhost:8085/account/verify';
+  verifyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
 
   constructor(private http: HttpClient, private router: Router) {
     this.getProfile();
