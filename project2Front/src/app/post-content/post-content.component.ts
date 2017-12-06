@@ -23,12 +23,12 @@ export class PostContentComponent implements OnInit {
   post: Post;
   pending = false;
   active = false;
-  url = 'http://localhost:8085/post/getPost';
-  verifyUrl = 'http://localhost:8085/account/verify';
-  approveUrl = 'http://localhost:8085/post/approve';
-  denyUrl = 'http://localhost:8085/post/deny';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/getPost';
+  verifyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
+  approveUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/approve';
+  denyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/deny';
   queryUrl = 'http://maps.googleapis.com/maps/api/geocode/json?address=';
-  closeUrl = 'http://localhost:8085/post/close';
+  closeUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/close';
   imageUrl = '../../assets/img/nyanko06.png';
 
   constructor(private postService: PostService,

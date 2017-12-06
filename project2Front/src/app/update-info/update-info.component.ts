@@ -10,8 +10,8 @@ import {User} from '../models/user';
 })
 export class UpdateInfoComponent implements OnInit {
   user: User;
-  url = 'http://localhost:8085/account/verify';
-  updateUrl = 'http://localhost:8085/account/update';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
+  updateUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/update';
   nickname;
   phone;
   constructor(private router: Router,

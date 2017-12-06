@@ -16,8 +16,8 @@ export class PendingPostComponent implements OnInit, AfterViewInit {
   user: User;
   posts: Post[];
   status = 'Pending';
-  url = 'http://localhost:8085/post/getPendingPost';
-  verifyUrl = 'http://localhost:8085/account/verify';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/getPendingPost';
+  verifyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
   displayedColumns1 = ['postId', 'title', 'typeId.type', 'statusId.status', 'postDate'];
   dataSource1 = new MatTableDataSource(this.posts);
 

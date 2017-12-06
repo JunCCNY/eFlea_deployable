@@ -12,7 +12,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from "@angular/material";
 })
 export class SellStuffComponent implements OnInit, AfterViewInit {
   salePosts: Post[];
-  url = 'http://localhost:8085/post/salePost';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/salePost';
 
 
   displayedColumns1 = ['postId', 'title', 'typeId.type', 'statusId.status', 'postDate'];

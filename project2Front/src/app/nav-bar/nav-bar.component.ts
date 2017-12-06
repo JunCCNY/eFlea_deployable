@@ -11,8 +11,8 @@ import {User} from '../models/user';
 export class NavBarComponent implements OnInit {
   admin = false;
   user: User;
-  url = 'http://localhost:8085/account/logout';
-  verifyUrl = 'http://localhost:8085/account/verify';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/logout';
+  verifyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
 
   constructor(private router: Router,
               private http: HttpClient) { }

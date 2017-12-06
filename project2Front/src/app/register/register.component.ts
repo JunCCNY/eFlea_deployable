@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
    password;
    username;
    phone = null;
-   url = 'http://localhost:8085/account/register';
+   url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/register';
    err = 'The email is already registered';
    isMatch: boolean = false;
 

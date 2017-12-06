@@ -12,7 +12,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 })
 export class PostHistoryComponent implements OnInit, AfterViewInit {
   posts: Post[];
-  url = 'http://localhost:8085/post/postHistory';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/postHistory';
 
   displayedColumns1 = ['postId', 'title', 'typeId.type', 'statusId.status', 'postDate'];
   dataSource1 = new MatTableDataSource(this.posts);

@@ -24,8 +24,8 @@ export class NewPostComponent implements OnInit {
   state;
   zip;
   description;
-  url = 'http://localhost:8085/account/verify';
-  postUrl = 'http://localhost:8085/post/new';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
+  postUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/new';
   imgurUrl = 'https://api.imgur.com/3/image';
   private apiUrl: string;
   private apiKey: string;

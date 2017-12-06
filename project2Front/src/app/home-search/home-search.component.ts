@@ -21,10 +21,10 @@ export class HomeSearchComponent implements OnInit {
   user: User;
   filterType = 'All';
   filterTitle = null;
-  url = 'http://localhost:8085/post/filteredPosts'
-  verifyUrl = 'http://localhost:8085/account/verify';
+  url = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/filteredPosts'
+  verifyUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/account/verify';
   post: Post = new Post();
-  activePostUrl = 'http://localhost:8085/post/getActivePost';
+  activePostUrl = 'http://ec2-18-217-30-101.us-east-2.compute.amazonaws.com:8085/post/getActivePost';
   defaultImgUrl = '../../assets/img/nyanko06.png';
 
   constructor(private http: HttpClient,
